@@ -49,6 +49,27 @@ python manage.py runserver
 
 ```
 
+## Open the Swagger API docs:
+ - Swagger UI: http://127.0.0.1:8000/swagger/
+ - Redoc: http://127.0.0.1:8000/redoc/
 
+## Example Requests:
+Get Available Classes
+```bash
+curl -X GET "http://localhost:8000/api/classes/?timezone=America/New_York"
 
-
+```
+Create a Booking
+```bash
+curl -X POST "http://localhost:8000/api/book/" \
+-H "Content-Type: application/json" \
+-d '{"fitness_class": 1, "client_name": "John Doe", "client_email": "john@example.com"}'
+```
+Get Client Bookings
+```bash
+curl -X GET "http://localhost:8000/api/bookings/?email=john@example.com"
+```
+Testing
+```bash
+python manage.py test
+```

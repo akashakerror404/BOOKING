@@ -1,0 +1,5 @@
+id,name,date_time,instructor,capacity,available_slots
+1,YOGA,2025-07-20 07:00:00,Sophia Turner,20,20
+2,ZUMBA,2025-07-20 18:30:00,Liam Patel,15,15
+3,HIIT,2025-07-21 06:45:00,Olivia Nguyen,12,12
+4,YOGA,2025-07-21 08:15:00,Ethan Roy,25,25

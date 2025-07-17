@@ -63,11 +63,11 @@ Create a Booking
 ```bash
 curl -X POST "http://localhost:8000/api/book/" \
 -H "Content-Type: application/json" \
--d '{"fitness_class": 1, "client_name": "John Doe", "client_email": "john@example.com"}'
+-d '{"fitness_class": 1, "client_name": "Ram", "client_email": "ram@gmail.com"}'
 ```
 Get Client Bookings
 ```bash
-curl -X GET "http://localhost:8000/api/bookings/?email=john@example.com"
+curl -X GET "http://localhost:8000/api/bookings/?email=ram@gmail.com"
 ```
 Testing
 ```bash
